@@ -1,11 +1,10 @@
 # Security Scanner
 
-## 4-line explanation
+## Overview
 
-This project scans a Python file and asks Gemini to review it for security issues.
-`scanner.py` reads a target file, sends its contents to the model, and prints colored findings.
-`vulnerable.py` contains example insecure patterns you can use for testing.
-`test.py` lists available Gemini models using the same API key setup.
+Security Scanner is a small local command-line tool for reviewing Python code for common security issues. It sends the contents of a file to Gemini and asks for a security-focused analysis, then prints the findings in a readable terminal format.
+
+`scanner.py` is the main entry point and performs the scan. `vulnerable.py` is included as a sample file with intentionally insecure patterns so you can test the scanner. `test.py` is a utility script for checking which Gemini models are available with your API key.
 
 ## What this project does
 
